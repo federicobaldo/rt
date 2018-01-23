@@ -1585,6 +1585,19 @@ to own ticket then you have to enable autocompleting.
 
 Set($AutocompleteOwners, 0);
 
+=item C<$DropdownMenuLimit>
+
+The owner dropdown menu on a ticket's Modify People page changes from a
+dropdown menu to an autocomplete field once the menu holds more than the
+DropdownMenuLimit.
+
+Please note that setting this limit to a value greater than the default
+value, 50, may increase the page load time.
+
+=cut
+
+Set($DropdownMenuLimit, 50);
+
 =item C<$AutocompleteOwnersForSearch>
 
 If set to 1, the owner drop-downs for the query builder are always
